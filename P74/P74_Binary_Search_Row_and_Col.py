@@ -3,7 +3,6 @@ class Solution:
         # we can binary search the rows for the appropriate row, and then binary search that row itself
         row_list = [val[0] for val in matrix]
         low_row, high_row = 0, len(row_list) - 1
-        print(row_list)
 
         while low_row <= high_row:
             row_step = (low_row + high_row) // 2
